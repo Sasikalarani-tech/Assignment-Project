@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Assignment1.Assignment1Test"/>
+    </classes>
+  </test> <!-- Test -->
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="Assignment1.Assignment1Test">
+        <methods>
+          <include name="enterUnamePwd"/>
+          <include name="closeDriver"/>
+          <include name="driverSetUp"/>
+        </methods>
+      </class> <!-- Assignment1.Assignment1Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

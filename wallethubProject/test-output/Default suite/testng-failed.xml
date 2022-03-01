@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="param-val-not-found"/>
+  <test name="Default test" verbose="2">
+    <classes>
+      <class name="Assignment1.Assignment1Test"/>
+      <class name="Assignment1.Facebook_Home"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="Assignment1.Assignment1Test">
+        <methods>
+          <include name="validUnamePwd"/>
+          <include name="validUnamePwd"/>
+          <include name="closeDriver"/>
+          <include name="invalidUserPwd"/>
+          <include name="invalidUserPwd"/>
+          <include name="driverSetUp"/>
+        </methods>
+      </class> <!-- Assignment1.Assignment1Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

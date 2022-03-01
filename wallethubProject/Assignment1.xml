@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WalletHubProject" thread-count="5" >
+<test  name="Assignment1_Chrome">
+	<parameter name="browser" value="chrome" />
+    <classes>
+      <class name="Assignment1.Assignment1Test"/>
+    </classes>
+  </test>
+</suite>
